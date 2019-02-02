@@ -1,0 +1,3 @@
+[submodule "nodle"]
+	path = nodle
+	url = git@github.com:msundstrom/nodle.git
