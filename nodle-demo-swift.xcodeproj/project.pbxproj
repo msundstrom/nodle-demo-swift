@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		40C08EFA22059F5F00FD01AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C08EF922059F5F00FD01AE /* AppDelegate.swift */; };
-		40C08EFC22059F5F00FD01AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C08EFB22059F5F00FD01AE /* ViewController.swift */; };
+		40C08EFC22059F5F00FD01AE /* SlidersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C08EFB22059F5F00FD01AE /* SlidersViewController.swift */; };
 		40C08EFF22059F5F00FD01AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C08EFD22059F5F00FD01AE /* Main.storyboard */; };
 		40C08F0122059F6000FD01AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C08F0022059F6000FD01AE /* Assets.xcassets */; };
 		40C08F0422059F6000FD01AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C08F0222059F6000FD01AE /* LaunchScreen.storyboard */; };
 		40C08F172205A5AF00FD01AE /* nodle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C08F122205A59A00FD01AE /* nodle.framework */; };
 		40C08F182205A5AF00FD01AE /* nodle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 40C08F122205A59A00FD01AE /* nodle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		40C08F1E2206E06900FD01AE /* DemosListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C08F1D2206E06900FD01AE /* DemosListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,12 +65,13 @@
 /* Begin PBXFileReference section */
 		40C08EF622059F5F00FD01AE /* nodle-demo-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nodle-demo-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C08EF922059F5F00FD01AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40C08EFB22059F5F00FD01AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40C08EFB22059F5F00FD01AE /* SlidersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidersViewController.swift; sourceTree = "<group>"; };
 		40C08EFE22059F5F00FD01AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40C08F0022059F6000FD01AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40C08F0322059F6000FD01AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40C08F0522059F6000FD01AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40C08F0C2205A59A00FD01AE /* nodle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = nodle.xcodeproj; path = nodle/nodle.xcodeproj; sourceTree = "<group>"; };
+		40C08F1D2206E06900FD01AE /* DemosListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemosListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +106,13 @@
 		40C08EF822059F5F00FD01AE /* nodle-demo-swift */ = {
 			isa = PBXGroup;
 			children = (
+				40C08F1C22061D2A00FD01AE /* Demos */,
 				40C08EF922059F5F00FD01AE /* AppDelegate.swift */,
-				40C08EFB22059F5F00FD01AE /* ViewController.swift */,
 				40C08EFD22059F5F00FD01AE /* Main.storyboard */,
 				40C08F0022059F6000FD01AE /* Assets.xcassets */,
 				40C08F0222059F6000FD01AE /* LaunchScreen.storyboard */,
 				40C08F0522059F6000FD01AE /* Info.plist */,
+				40C08F1D2206E06900FD01AE /* DemosListViewController.swift */,
 			);
 			path = "nodle-demo-swift";
 			sourceTree = "<group>";
@@ -129,6 +132,14 @@
 				40C08F142205A59A00FD01AE /* nodleTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		40C08F1C22061D2A00FD01AE /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				40C08EFB22059F5F00FD01AE /* SlidersViewController.swift */,
+			);
+			path = Demos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40C08EFC22059F5F00FD01AE /* ViewController.swift in Sources */,
+				40C08F1E2206E06900FD01AE /* DemosListViewController.swift in Sources */,
+				40C08EFC22059F5F00FD01AE /* SlidersViewController.swift in Sources */,
 				40C08EFA22059F5F00FD01AE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
